@@ -2,6 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <h1>{{ input_val }}</h1>
+    <div>
+      <input type="text" v-model="input_val">
+    </div>
     <ul>
       <li v-for="user in usrs">
         {{ user.firstname }} {{ user.lastname }}
@@ -34,7 +38,8 @@ export default {
       usrs: [{firstname: 'Sheng', lastname: 'Yang'},
              {firstname: 'Will', lastname: 'Smith'},
              {firstname: 'Jack', lastname: 'Black'}
-           ]
+           ],
+      input_val: ''
     }
   }
 }
