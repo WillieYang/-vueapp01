@@ -11,6 +11,9 @@
         {{ user.firstname }} {{ user.lastname }}
       </li>
     </ul>
+    <div>
+      <button class="btn btn-primary" v-on:click="counter++">You've clicked this button {{ counter }} times!</button>
+    </div>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
@@ -39,7 +42,8 @@ export default {
              {firstname: 'Will', lastname: 'Smith'},
              {firstname: 'Jack', lastname: 'Black'}
            ],
-      input_val: ''
+      input_val: '',
+      counter: 0
     }
   }
 }
