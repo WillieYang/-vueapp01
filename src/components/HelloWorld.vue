@@ -4,9 +4,13 @@
     <h2>Essential Links</h2>
     <h1>{{ input_val }}</h1>
     <div>
-      <input type="text" v-model="input_val">
+      <div class="col-lg-4 col-sm-4"></div>
+      <div class="col-lg-4 col-sm-4">
+        <input type="text" class="form-control col col-lg-4" v-model="input_val">
+      </div>
+      <div class="col-lg-12 col-sm-12"></div>
     </div>
-    <ul>
+    <ul class="col-lg-12 col-sm-12">
       <li v-for="user in usrs">
         {{ user.firstname }} {{ user.lastname }}
       </li>
